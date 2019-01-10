@@ -127,7 +127,7 @@ function check() {
             range = 2;
         }
 //  if score is great than zero, and less than 10 array index 1 will appear  
-        if (correct > 0 && correct < 10) {
+        if (correct > 0 && correct <= 10) {
             range = 1;
         }
 // if score is greater than 13, array index number 0 will appear
