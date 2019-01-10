@@ -1,0 +1,68 @@
+body {
+    background: url(../images/postcards-of-the-united-states-vintage-usa-all-50-states-map-choose-your-own-background-design-turnpike.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    margin-top: 2%;
+    max-width: 90%;
+    background-color: white;
+    padding: 10px;
+    opacity: 0.93;
+}
+
+.header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: blacK;
+    font-style: bold;
+    background: url(../images/91bd9e1c28df7d7e9e4ae03fc598ab5e.jpg);
+    height: 100px;;
+    padding: 15px;
+    
+}
+
+h1 {
+    font-size: 70px;
+    color: black
+}
+
+#instructions {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-style: italic, bold;
+    color: black;
+    margin: 2%;
+    text-align: center;
+}
+
+.timer {
+    text-align: center;
+    margin: 2%;
+}
+
+#time {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: red;
+    font-style: bold;
+}
+
+#quiz {
+    text-align: center;
+}
+#after_submit {
+    visibility: hidden;
+}
+
+#message {
+    text-align: center;
+}
+
+#number_correct {
+    text-align: center;
+    font-size: 30px;
+    color: red
+}

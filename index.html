@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Totally Trivial Trivia!</title>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+        <script> src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"</script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="../TriviaGame/assets/css/style.css">
+    </head>
+
+    <body>
+<!--Container-->
+        <div class="container">
+    <!--Header-->     
+            <div class="header">
+                <div class="col-md-12">
+                    <h1>Totally Trivial Trivia!</h1>
+                </div>
+            </div>
+
+    <!--Instructions-->
+    <div>
+        <p id="instructions">Can you guess these US state capitals?</p>
+    </div>
+
+    <!--Counter-->    
+    <div class="timer">
+            <div div class="col-md-12">Quiz begins <b>NOW! </b><span id="time">02:00</span>  minutes left...
+            </div>
+    </div>
+
+    
+    
+    <!--Questions-->
+            <div class="col-md-12"id="quiz">
+                <div class="col-md-12"> 
+                    <form id="quiz" name="quiz">
+
+                        <!--question1-->
+                        <p>What is the capital of North Carolina? <br></p>
+                        <input type="radio" name="question1" id="mc" value="Raleigh">Raleigh<br>
+                        <input type="radio" name="question1" id="mc" value="Durham">Durham<br><br>
+                        
+                        <!--question2-->
+                        <p>What is the capital of South Carolina? <br></p>
+                        <input type="radio" name="question2" id="mc" value="Columbia">Columbia<br>
+                        <input type="radio" name="question2" id="mc" value="Charleston">Charleston<br><br>
+                        
+                        <!--question3-->
+                        <p>What is the capital of Alabama? <br></p>
+                        <input type="radio" name="question3" id="mc" value="Burmingham">Burmingham<br>
+                        <input type="radio" name="question3" id="mc" value="Montgomery">Montgomery<br><br>
+
+                        <!--question4-->
+                        <p>What is the capital of California? <br></p>
+                        <input type="radio" name="question4" id="mc" value="San_Fransisco">San Fransisco<br>
+                        <input type="radio" name="question4" id="mc" value="Sacramento">Sacramento<br><br>
+
+                        <!--question5-->
+                        <p>What is the capital of Connecticut? <br></p>
+                        <input type="radio" name="question5" id="mc" value="Hartford">Hartford<br>
+                        <input type="radio" name="question5" id="mc" value="New_Haven">New Haven<br><br>
+
+                        <!--question6-->
+                        <p>What is the capital of Florida? <br></p>
+                        <input type="radio" name="question6" id="mc" value="Tallahassee">Tallahassee<br>
+                        <input type="radio" name="question6" id="mc" value="Orlando">Orlando<br><br>
+
+                        <!--question7-->
+                        <p>What is the capital of Idaho? <br></p>
+                        <input type="radio" name="question7" id="mc" value="Idaho_Falls">Idaho Falls<br>
+                        <input type="radio" name="question7" id="mc" value="Boise">Boise<br><br>
+
+                        <!--question8-->
+                        <p>What is the capital of Kentucky? <br></p>
+                        <input type="radio" name="question8" id="mc" value="Louisville">Louisville<br>
+                        <input type="radio" name="question8" id="mc" value="Frankfort">Frankfort<br><br>
+
+                        <!--question9-->
+                        <p>What is the capital of Maine? <br></p>
+                        <input type="radio" name="question9" id="mc" value="Augusta">Augusta<br>
+                        <input type="radio" name="question9" id="mc" value="Nantucket">Nantucket<br><br>
+
+                        <!--question10-->
+                        <p>What is the capital of Mississipi? <br></p>
+                        <input type="radio" name="question10" id="mc" value="Oxford">Oxford<br>
+                        <input type="radio" name="question10" id="mc" value="Jackson">Jackson<br><br>
+
+                        <!--question11-->
+                        <p>What is the capital of North Dakota? <br></p>
+                        <input type="radio" name="question11" id="mc" value="Bismarck">Bismarck<br>
+                        <input type="radio" name="question11" id="mc" value="Fargo">Fargo<br><br>
+
+                        <!--question12-->
+                        <p>What is the capital of Texas? <br></p>
+                        <input type="radio" name="question12" id="mc" value="Dallas">Dallas<br>
+                        <input type="radio" name="question12" id="mc" value="Austin">Austin<br><br>
+
+                        <!--question13-->
+                        <p>What is the capital of Oregon? <br></p>
+                        <input type="radio" name="question13" id="mc" value="Portland">Portland<br>
+                        <input type="radio" name="question13" id="mc" value="Salem">Salem<br><br>
+
+                        <!--question14-->
+                        <p>What is the capital of West Virginia? <br></p>
+                        <input type="radio" name="question14" id="mc" value="Charleston">Charleston<br>
+                        <input type="radio" name="question14" id="mc" value="Parkersburg">Parkersburg<br><br>
+
+                        <!--question15-->
+                        <p>What is the capital of Washington? <br></p>
+                        <input type="radio" name="question15" id="mc" value="Seattle">Seattle<br>
+                        <input type="radio" name="question15" id="mc" value="Olympia">Olympia<br><br>
+
+
+                        <!--submit button-->
+                        <input type = "button" id= "button" value="I'm finished!" onclick = "check();">
+                   </form>
+                </div>
+            </div>
+
+            <div id = "after_submit">
+                <br>
+                <p id = "message"></p>
+                <br>
+                <p id = "number_correct"></p>
+            </div>
+        
+
+    <!--End of container-->       
+        </div>
+
+
+
+            <script src="../TriviaGame/assets/javascript/app.js"></script>
+    </body>
+
+
+</html>
