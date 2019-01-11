@@ -7,7 +7,7 @@ function startTimer(duration, display) {
     var minutes;
 //setInterval- want a certin event to happen, every so often
 //[arseInt: take and analyzes a string and returns and interger
-    setInterval(function () {
+    var setIntervalID = setInterval(function () {
 //minutes are the number of current sconds divided by 60
         minutes = parseInt(timer / 60, 10)
 //seconds are caluclated as the set of 60 of the total seconds counter
@@ -19,16 +19,22 @@ function startTimer(duration, display) {
         display.textContent = minutes + ":" + seconds;
 
         if (--timer < 0) {
-            timer = duration;
+            stop();
+            alert("Time is up! Submit questions below to see your score!");
+            clearInterval(setIntervalID);
         }
     }, 1000);
 }
+
+
+
 //when browser opens run this function:
 window.onload = function () {
     var twoMinutes = 60 * 2,
         display = document.querySelector('#time');
     startTimer(twoMinutes, display);
 };
+
 
 
 
